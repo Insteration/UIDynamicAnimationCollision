@@ -39,21 +39,21 @@ class ViewController: UIViewController {
     
     func getAngle(_ angle: Angle) -> CGFloat {
         switch angle {
-        case .zero:
+        case .zero: // 0
             return .pi
-        case .fortyFive:
+        case .fortyFive: // 45
             return (3 * .pi) / 4
-        case .ninety:
+        case .ninety: // 90
             return .pi / 2
-        case .oneHundredThirtyFive:
+        case .oneHundredThirtyFive: // 135
             return .pi / 4
-        case .oneHundredEighty:
-            return .pi
-        case .twentyTwentyFive:
+        case .oneHundredEighty: // 180
+            return -.pi
+        case .twentyTwentyFive: // 225
             return (7 * .pi) / 4
-        case .twentySevenTen:
+        case .twentySevenTen: // 270
             return (3 * .pi) / 2
-        case .threeHundredSixty:
+        case .threeHundredSixty: // 360
             return (5 * .pi) / 4
         }
     }
